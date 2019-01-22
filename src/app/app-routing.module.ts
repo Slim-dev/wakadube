@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {TestRouteComponent} from "./test-route/test-route.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'test/:email/:token', component: TestRouteComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
