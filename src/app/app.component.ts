@@ -11,6 +11,14 @@ export class AppComponent {
   title = 'wakadube';
   update = false;
   joke: any;
+  model = {
+    left: true,
+    middle: false,
+    right: false
+  };
+
+  focus;
+  focus1;
 
   constructor(updates: SwUpdate, private data: DataService) {
     //feature to enable live-reload
